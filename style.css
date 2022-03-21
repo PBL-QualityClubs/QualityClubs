@@ -7,15 +7,59 @@
 
 }
 
-.flex{
-
-    background: url(blue.jpg) no-repeat center center fixed;
-
-}
+/* Class Selectors */
 
 .nav-link{
+    font-family: 'Ovo', serif;
     color: white !important;
 }
 
+.nav-link:hover{
+    color: red !important;
+}
+
+.navbar-brand{
+    font-family: 'Noto Serif Display', serif;
+    font-size: 30px;
+}
+
+.lead{
+    color: white;
+    font-weight: 500px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.quality{
+    color: white;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.mb-4{
+    font-family: 'Ovo', serif;
+    font-weight: 600;
+}
+
+.btn{
+    font-family: 'Noto Serif Display', serif;
+    padding: 15px 80px;
+    margin-bottom: 30px;
+}
+
+
+/* ID Selectors */
+
+#home-container{
+    background-color: rgb(118, 118, 185);
+}
+
+#form-id{
+    background-color: rgb(224, 187, 187) !important;
+}
+
+#submit-id{
+    background-color: rgb(224, 187, 187) !important;
+}
 
 
