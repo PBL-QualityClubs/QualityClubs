@@ -24,13 +24,13 @@
 }
 
 .lead{
-    color: white;
+    color: black;
     font-weight: 500px;
     font-family: 'IBM Plex Serif', serif;
 }
 
 .quality{
-    color: white;
+    color: black;
     font-family: 'Noto Serif Display', serif;
     font-size: 55px;
     font-weight: bold;
@@ -50,9 +50,9 @@
 
 /* ID Selectors */
 
-#home-container{
+/* #home-container{
     background-color: rgb(118, 118, 185);
-}
+} */
 
 #form-id{
     background-color: rgb(224, 187, 187) !important;
