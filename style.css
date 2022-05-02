@@ -2,9 +2,6 @@
     .form-input{
         width: 50%;
     }
-
-    
-
 }
 
 /* Class Selectors */
@@ -29,6 +26,23 @@
     font-family: 'IBM Plex Serif', serif;
 }
 
+.lead-club{
+    color: white;
+    font-weight: 500px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.club-coding{
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+}
+.club-photography{
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+}
+
 .quality{
     color: black;
     font-family: 'Noto Serif Display', serif;
@@ -47,6 +61,11 @@
     margin-bottom: 30px;
 }
 
+.socials{
+    padding: 13px;
+    cursor: pointer;
+}
+
 
 /* ID Selectors */
 
@@ -55,11 +74,26 @@
 } */
 
 #form-id{
-    background-color: rgb(224, 187, 187) !important;
+    background-color: #B6D0E2 !important;
 }
 
 #submit-id{
-    background-color: rgb(224, 187, 187) !important;
+    background-color: #B6D0E2 !important;
 }
 
+#footer-lead{
+    color: white;
+    font-weight: 500px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+#contact-container{
+    background: black;
+   border-radius: 10px;
+    
+}
+
+#contact-list{
+    border-radius: 10px;
+}
 
