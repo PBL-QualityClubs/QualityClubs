@@ -15,6 +15,18 @@ body {
     
 }
 
+.form-control, textarea{
+    max-width: 400px;
+    background: #111;
+    height: auto;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+hr{
+    border-color: #205375;
+}
+
 /* Class Selectors */
 
 :root {
@@ -225,6 +237,7 @@ body{
 .navbar-brand{
     font-family: 'Noto Serif Display', serif;
     font-size: 30px;
+    font-weight: bolder;
 }
 
 .btn:hover {
@@ -296,7 +309,174 @@ body{
     font-family: 'IBM Plex Serif', serif;
 }
 
+.section-header{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Ovo', serif;
+}
 
+.contact-wrapper{
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+}
+
+.form-horizontal{
+    float: left;
+    max-width: 400px;
+    font-weight: 400;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.form-group{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* .form-control:focus{
+    background: #111;
+} */
+
+.send-button{
+    margin-top: 15px;
+    height: 50px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.button{
+    width: 300px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.button:hover{
+    transform: translate(0px, -29px, 0px) !important;
+}
+
+.send-text{
+    display: block;
+    margin-top: 10px;
+    font-weight: 300px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.contact-info{
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+}
+
+.contact-list{
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item{
+    line-height: 4;
+
+}
+
+.contact-text{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300px;
+    letter-spacing: 1.9px;
+}
+
+.contact-text a{
+    color: #000000;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.contact-text a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.place{
+    margin-left: 40px;
+}
+
+.phone{
+    margin-left: 34px;
+}
+
+.email{
+    margin-left: 34px;
+}
+
+.social-icons{
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+
+}
+
+.social-icons li{
+    position: relative;
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 10px auto;
+    line-height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-icons li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    opacity: 0;
+    box-shadow: 0 0 0 1px black;
+    transition: all .2s ease-in-out;
+}
+
+.social-icons li:hover:after{
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-icons li a{
+    color:#205375;
+}
 
 /* ID Selectors */
 
@@ -331,9 +511,24 @@ body{
 #nav-link-photography{
     font-family: 'Ovo', serif;
     color: black !important;
+    font-weight: bolder;
 }
 
+#nav-link-photography:hover{
+    color: red !important;
+}
 #questions{
     background-color: rgb(199, 215, 215);
 }
 
+#contact{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+#massage-contact{
+    position: relative;
+    margin-right: 70px;
+}

@@ -12,6 +12,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Libre+Baskerville&family=Noto+Serif+Display&family=Ovo&display=swap" rel="stylesheet">
 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- CSS Style Sheet -->
         <link rel="stylesheet" href="style.css">
 
@@ -23,25 +26,22 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2">
         <div class="container">
-            <a href="./index.html" class="navbar-brand">Quality Clubs</a>
-    
+            <a href="./index.html" class="navbar-brand">Quality <span class="text-danger">Clubs</span></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-    
+
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar nav ms-auto">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="blogs.html" class="nav-link">BLOGS</a>
+                        <a href="clubs.html" class="nav-link">CLUBS</a>
                     </li>
                     <li class="nav-item">
                         <a href="contactus.html" class="nav-link">CONTACT US</a>
@@ -50,5 +50,74 @@
             </div>
         </div>
     </nav>
+
+    <section class="container" id="contact">
+        <h1 class="section-header">CONTACT US</h1>
+        <div class="contact-wrapper">
+            <form class="form-horizontal" action="contactus.html" method="post" role="form">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input class="form-control type="text" name="name" value="" placeholder="NAME" id="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input class="form-control" type="text" name="email" value="" placeholder="EMAIL" id="name">
+                    </div>
+                </div>
+                <textarea name="MASSAGE" rows="10" placeholder="MASSAGE" class="form-control id="massage-contact"></textarea>
+                <button class="btn btn-primary send-button" type="submit" name="button" id="submit">
+                    <div class="button">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="send-text">SEND</span>
+                    </div>
+                </button>
+            </form>
+            <div class="contact-info">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <span class="contact-text place location-pin">ABC XYZ | US</span>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="contact-text phone location-pin">
+                            <a href="tel:0981234519" title="Give me a Call">0981234519</a>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="contact-text email location-pin">
+                            <a href="mailto:#" title="Send me an email">information@mail.com</a>
+                        </span>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </section>
 
 </body>
